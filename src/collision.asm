@@ -92,3 +92,6 @@ check_collision_asm:
     pop rbx
     pop rbp
     ret
+
+; Stack marking for GNU - prevents executable stack warning
+section .note.GNU-stack noalloc noexec nowrite
