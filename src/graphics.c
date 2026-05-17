@@ -9,7 +9,7 @@ static struct termios original_termios;
 
 void graphics_init(void) {
     /* Disable canonical mode and echo */
-    struct termios raw = original_termios;
+    struct termios raw;
     tcgetattr(STDIN_FILENO, &original_termios);
     raw = original_termios;
     raw.c_lflag &= ~(ICANON | ECHO);
