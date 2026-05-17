@@ -91,7 +91,7 @@ void game_update(GameState *state) {
     }
 }
 
-void game_render(GameState *state) {
+void game_render(GameState *state __attribute__((unused))) {
     /* Rendered by graphics module */
 }
 
